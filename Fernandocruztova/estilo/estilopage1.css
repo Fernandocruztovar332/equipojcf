@@ -28,6 +28,7 @@
 }
 #pr1 h3{
     margin: 0 20px;
+    color: white;
 }
 
 .cabezaD{
@@ -41,18 +42,20 @@ body{
 }
 
 .logo{
-    width: 200px;
+    width: 215px;
     background-color: brown;
-    height: 50px;
+    height: px;
     display: flex;
     align-items: center;
+    border-radius: 30px;
    
 }
 .logo img{
+    border-radius: 30px;
     margin-right: 10px;
 }
 
-h1{
+h3{
     color: red;
 }
 .fct{
