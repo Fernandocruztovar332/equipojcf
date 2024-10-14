@@ -1,4 +1,63 @@
 /*estilopage1.css*/
-.pr1{
+*{
+    margin: 0;
+}
+#pr1{
+    background-color: #5353ec;
+    margin: none;
+    width: auto;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    
+}
+
+.imgP{
+    margin: 0;
+    width: auto;
+    height: auto;
+    align-items: center;   
+    justify-content: center;
+}
+
+.imgP img{
+    margin: 0;
+    width: auto;
+    height: 408px;
+    
+}
+#pr1 h3{
+    margin: 0 20px;
+}
+
+.cabezaD{
+    margin-left: auto; 
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #BEBEBE;
+}
+
+.logo{
+    width: 200px;
     background-color: brown;
+    height: 50px;
+    display: flex;
+    align-items: center;
+   
+}
+.logo img{
+    margin-right: 10px;
+}
+
+h1{
+    color: red;
+}
+.fct{
+    background-color: blueviolet;
+    width:  700px;
+   
+    
 }
