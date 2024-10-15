@@ -11,6 +11,25 @@
     display: flex;
     
 }
+.introduccion div{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.introduccion p{
+    justify-content: center;
+    width: 380px;
+    height: 380px;
+}
+.introduccion img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
 
 .imgP{
     margin: 0;
