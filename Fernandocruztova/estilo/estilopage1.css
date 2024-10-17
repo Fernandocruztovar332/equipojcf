@@ -12,22 +12,35 @@
     
 }
 .introduccion div{
-    width: 400px;
-    height: 400px;
-    float: left;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-align: center;
+    width: 500px;
+    height: 500px;
+    
+
+    
     
 }
+.introduccion h2{
+    position: relative;
+    top:20px;
+    left: 140px;
+    text-align: center;
+    font-size: 30px;
+}
 .introduccion p{
-    justify-content: center;
+    position:relative;
+    top: 30px;
+    left: 120px;
     width: 380px;
     height: 380px;
+    text-align: center;
+    font-size: 24px;
 }
 .introduccion img{
-    width: 200px;
-    height: 200px;
+    position: relative;
+    top: 0px;
+    left: 290px;
+    width: 350pxpx;
+    height: 350px;
     border-radius: 50px;
 }
 
