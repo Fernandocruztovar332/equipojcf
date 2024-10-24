@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiTaxi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+        .container {
+            text-align: left; /* Alinear el texto a la izquierda */
+            flex: 1;
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="button"] {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="text"] {
+            width: 250px;
+        }
+        input[type="button"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #f2f2f2;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .user-section span {
+            color: white;
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ServiTaxi</div>
+        <nav>
+            <ul>
+                <li><a href="#">Viaja</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">Conduce Con Nosotros</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+        <div class="user-section">
+            <span>¡Ayuda!</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Contenedor del texto y los campos -->
+        <div class="container">
+            <h1>Viaja A Cualquier Lugar Con ServiTaxi</h1>
+            <p>Agenda Un Gran Viaje y Sobretodo Relájate.</p>
+            <input type="text" placeholder="Ingresa Lugar De Partida">
+            <input type="text" placeholder="Ingresa Lugar De Destino">
+            <br>
+            <input type="button" value="Ver Precios">
+        </div>
+
+        <!-- Contenedor de la imagen -->
+        <div class="image-container">
+            <img src="C:\Users\jmj25\OneDrive\Desktop\ServiTaxi.png" alt="Imagen del viaje">
+        </div>
+    </div>
+
+</body>
+</html>
