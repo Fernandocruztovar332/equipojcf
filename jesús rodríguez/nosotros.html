@@ -19,7 +19,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         header {
-            background-color: #4CAF50;
+            background-color: #dcf740;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -39,13 +39,54 @@
             bottom: 0;
             width: 100%;
         }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Bienvenidos a Nuestra Empresa</h1>
+                <div class="logo">ServiTaxi</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Viaja</a></li>
+                    <li><a href="#">-</a></li>
+                    <li><a href="#">Conduce Con Nosotros</a></li>
+                    <li><a href="#">-</a></li>
+                    <li><a href="#">¿Quiénes Somos?</a></li>
+                </ul>
+            </nav>
+        <div class="user-section">
+            <span>¡Ayuda!</span>
+        </div>
         </header>
 
         <section>
