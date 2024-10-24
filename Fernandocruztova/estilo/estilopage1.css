@@ -44,7 +44,7 @@
 .introduccion img{
     position: relative;
     top: 10 px;
-    left: 120px;
+    left: 100px;
     width: 400px;
     height: 300px;
     border-radius: 50px;
@@ -97,12 +97,7 @@ body{
 h3{
     color: red;
 }
-.fct{
-    background-color: blueviolet;
-    width:  700px;
-   
-    
-}
+
 .pr1 a{
     text-decoration: none;
 
