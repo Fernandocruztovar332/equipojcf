@@ -3,7 +3,7 @@
     margin: 0;
 }
 #pr1{
-    background-color: #5353ec;
+    background-color: #000000;
     margin: none;
     width: auto;
     height: 80px;
@@ -20,14 +20,33 @@
     text-align: center;
     
 }
+.introduccion h2{
+    position: relative;
+    top:20px;
+    left: 100px;
+    text-align: center;
+    font-size: 30px;
+}
 .introduccion p{
+    position: relative;
+    top: 26px;
+    left: 100px;
     justify-content: center;
     width: 380px;
     height: 380px;
+    font-size: 22px;
 }
+
+#pr1 a{
+    text-decoration: none;
+}
+
 .introduccion img{
-    width: 200px;
-    height: 200px;
+    position: relative;
+    top: 10 px;
+    left: 100px;
+    width: 400px;
+    height: 300px;
     border-radius: 50px;
 }
 
@@ -54,10 +73,11 @@
     margin-left: auto; 
     margin-right: 20px;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 body{
-    background-color: #BEBEBE;
+    background-color: white;
 }
 
 .logo{
@@ -77,9 +97,30 @@ body{
 h3{
     color: red;
 }
-.fct{
-    background-color: blueviolet;
-    width:  700px;
-   
-    
+
+.pr1 a{
+    text-decoration: none;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-section span {
+    color: white;
 }

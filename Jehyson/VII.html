@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiTaxi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(https://png.pngtree.com/background/20230517/original/pngtree-street-is-full-of-taxis-picture-image_2638131.jpg); /* Imagen de fondo */
+            background-size: cover; /* Para que la imagen cubra toda la pantalla */
+            background-position: center; /* Centrar la imagen */
+            background-repeat: no-repeat; /* Evitar que la imagen se repita */
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para hacer legible el texto */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            text-align: left;
+            flex: 1;
+            margin-right: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        input[type="text"], input[type="button"] {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="text"] {
+            width: 250px;
+        }
+        input[type="button"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #f2f2f2;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .user-section span {
+            color: white;
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ServiTaxi</div>
+        <nav>
+            <ul>
+                <li><a href="#">Viaja</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">Conduce Con Nosotros</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="#">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+        <div class="user-section">
+            <span>¡Ayuda!</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <h1>Viaja A Cualquier Lugar Con ServiTaxi</h1>
+            <p>Agenda Un Gran Viaje y Sobretodo Relájate.</p>
+            <input type="text" placeholder="Ingresa Lugar De Partida">
+            <input type="text" placeholder="Ingresa Lugar De Destino">
+            <br>
+            <input type="button" value="Ver Precios">
+        </div>
+        <div class="image-container">
+            <img src="https://scontent.fntr6-1.fna.fbcdn.net/v/t39.30808-6/464427002_122150008154322928_4540026078283767797_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGq4RvNQ3Bq4jxVnoI2uZDuV_i2VZvzN85X-LZVm_M3zvJePeQtrCYglZFcGH-DX9oDuIFQXTfXYBcKKoYgH4Ly&_nc_ohc=yW2o73zPJVEQ7kNvgHW2Lwu&_nc_zt=23&_nc_ht=scontent.fntr6-1.fna&_nc_gid=AR_hiGul6eZ2pbZ-i-VWsKO&oh=00_AYAKLod8YnRf7H5S44mp45RIlKr2xhONx4DUyEDbm9dnEg&oe=672063C2" alt="Imagen del viaje">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -200,4 +200,5 @@ def main(page: Page):
     )
     page.add(container)
 
-app(target=main)
+
+
