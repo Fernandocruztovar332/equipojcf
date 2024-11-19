@@ -1,74 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!--Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre la etiqueta HTML y especifica que el idioma es español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página similar a Uber</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        input[type="text"], input[type="button"] {
-            padding: 10px;
-            font-size: 1em;
-            margin: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-        input[type="text"] {
-            width: 250px;
-        }
-        input[type="button"] {
-            background-color: white;
-            color: black;
-            cursor: pointer;
-        }
-        input[type="button"]:hover {
-            background-color: #f2f2f2;
-        }
-        .image-container {
-            margin-top: 20px;
-        }
-        img {
-            width: 400px;
-            height: auto;
-        }
-    </style>
+    <meta charset="UTF-8"> <!-- Define el juego de caracteres a UTF-8 para manejar correctamente caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace el sitio web responsive para adaptarse a diferentes tamaños de pantalla -->
+    <title>ServiTaxi</title> <!-- Establece el título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="ServiTaxi.css"> <!-- Enlace al archivo de hojas de estilo externo (CSS) para el diseño de la página -->
 </head>
 <body>
 
-    <div class="container">
-        <h1>Viaja a cualquier lugar</h1>
-        <p>Pide un viaje, súbete al vehículo y relájate.</p>
-        <input type="text" placeholder="Ingresa una ubicación">
-        <input type="text" placeholder="Ingresa un destino">
-        <br>
-        <input type="button" value="Ver precios">
-    </div>
+    <header> <!-- Comienza el encabezado de la página -->
+        <div class="logo">ServiTaxi</div> <!-- Muestra el nombre/logo de la empresa en el encabezado -->
+        <nav> <!-- Inicia la sección de navegación -->
+            <ul> <!-- Crea una lista de enlaces de navegación -->
+                <li><a href="#">Viaja</a></li> <!-- Enlace para la sección "Viaja", con "#" como marcador temporal -->
+                <li><a href="#">-</a></li> <!-- Enlace separador -->
+                <li><a href="#">Conduce Con Nosotros</a></li> <!-- Enlace para la sección "Conduce Con Nosotros" -->
+                <li><a href="#">-</a></li> <!-- Otro enlace separador -->
+                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li> <!-- Enlace a la página "¿Quiénes Somos?" -->
+            </ul>
+        </nav> <!-- Cierra la sección de navegación -->
+        <div class="user-section"> <!-- Comienza la sección de usuario -->
+            <span>¡Ayuda!</span> <!-- Muestra el texto "¡Ayuda!" -->
+        </div> <!-- Cierra la sección de usuario -->
+    </header> <!-- Cierra el encabezado -->
 
-    <div class="image-container">
-        <img src="https://via.placeholder.com/400" alt="Imagen del viaje">
-    </div>
+    <div class="main-container"> <!-- Contenedor principal para la sección central de la página -->
+        <div class="container"> <!-- Contenedor para el contenido principal -->
+            <h1>Viaja A Cualquier Lugar Con ServiTaxi</h1> <!-- Título principal -->
+            <p>Agenda Un Gran Viaje y Sobretodo Relájate.</p> <!-- Párrafo con un mensaje de bienvenida -->
+            <input type="text" placeholder="Ingresa Lugar De Partida"> <!-- Campo de entrada para el lugar de partida -->
+            <input type="text" placeholder="Ingresa Lugar De Destino"> <!-- Campo de entrada para el lugar de destino -->
+            <br> <!-- Salto de línea para separar los campos de entrada -->
+            <input type="button" value="Ver Precios"> <!-- Botón para ver los precios -->
+        </div>
+        <div class="image-container"> <!-- Contenedor para la imagen -->
+            <img src="https://live.staticflickr.com/3444/3202929534_589ec6ffed_b.jpg" alt="Imagen del viaje"> <!-- Imagen relacionada con el viaje -->
+        </div> <!-- Cierra el contenedor de la imagen -->
+    </div> <!-- Cierra el contenedor principal -->
 
 </body>
 </html>
