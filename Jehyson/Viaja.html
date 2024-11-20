@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el tipo de documento como HTML5 y el idioma como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea adaptable a dispositivos móviles -->
+    <title>ServiTaxi</title> <!-- Establece el título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="Viaja.css"> <!-- Vinculación del archivo CSS externo para estilos de la página -->
+</head>
+<body>
+    <header> <!-- Encabezado de la página -->
+        <div class="logo">ServiTaxi</div> <!-- Logo o nombre de la empresa -->
+        <nav> <!-- Barra de navegación -->
+            <ul> <!-- Lista desordenada para los elementos del menú -->
+                <li><a href="Viaja.html">Viaja</a></li> <!-- Enlace a la página "Viaja" -->
+                <li><a href="#">-</a></li> <!-- Separador visual entre enlaces -->
+                <li><a href="IniciaSesion.html">Inicia Sesión</a></li> <!-- Enlace a la página de inicio de sesión -->
+                <li><a href="#">-</a></li> <!-- Separador visual entre enlaces -->
+                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li> <!-- Enlace a la página "¿Quiénes Somos?" -->
+            </ul>
+        </nav>
+        <div class="user-section">
+            <span>¡Ayuda!</span> <!-- Sección para mostrar información adicional como opciones de ayuda -->
+        </div>
+    </header>
+    <div class="main-container"> <!-- Contenedor principal para organizar el contenido -->
+        <div class="left-section"> <!-- Sección izquierda de la página -->
+            <h1>Viaja A Cualquier Lugar Con ServiTaxi</h1> <!-- Encabezado principal -->
+            <p>Planifica Tu Viaje Con Facilidad.</p> <!-- Descripción o subtítulo -->
+            <div class="form-group"> <!-- Grupo de formulario para el punto de partida -->
+                <input type="text" placeholder="Punto De Partida"> <!-- Campo de entrada para el punto de partida -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario para el destino -->
+                <input type="text" placeholder="Destino"> <!-- Campo de entrada para el destino -->
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario para seleccionar la fecha -->
+                <select> <!-- Menú desplegable para elegir una fecha -->
+                    <option>Hoy</option> <!-- Opción para seleccionar "Hoy" -->
+                    <option>Mañana</option> <!-- Opción para seleccionar "Mañana" -->
+                    <option>Esta Semana</option> <!-- Opción para seleccionar "Esta Semana" -->
+                </select>
+            </div>
+            <div class="form-group"> <!-- Grupo de formulario para seleccionar el tiempo -->
+                <select> <!-- Menú desplegable para elegir una hora -->
+                    <option>Ahora</option> <!-- Opción para seleccionar "Ahora" -->
+                    <option>En 15 Minutos</option> <!-- Opción para seleccionar "En 15 Minutos" -->
+                    <option>En 30 Minutos</option> <!-- Opción para seleccionar "En 30 Minutos" -->
+                    <option>En 45 Minutos</option> <!-- Opción para seleccionar "En 45 Minutos" -->
+                    <option>En 1 Hora</option> <!-- Opción para seleccionar "En 1 Hora" -->
+                </select>
+            </div>
+            <button>Ver Precios</button> <!-- Botón para consultar precios -->
+        </div>
+        <div class="map-container"> <!-- Contenedor para el mapa -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.5088508438817!2d-100.64504808498326!3d23.64967538463947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86884555e842b5d1%3A0x1a61a4edc5bafc5a!2sMatehuala%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700406201003!5m2!1ses!2smx" 
+                width="600"  <!-- Anchura Del Mapa -->
+                height="450" <!-- Altura del mapa -->
+                style="border:0;" <!-- Estilo para eliminar el borde -->
+                allowfullscreen="" <!-- Permite que el mapa se muestre en pantalla completa -->
+                loading="lazy"> <!-- Indica que el mapa se cargue de forma diferida -->
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
