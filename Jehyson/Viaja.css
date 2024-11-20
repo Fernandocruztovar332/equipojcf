@@ -1,99 +1,99 @@
+/* Estilos globales */
 body {
-    margin: 0; /* Elimina el margen predeterminado del cuerpo de la página */
-    font-family: Arial, sans-serif; /* Establece la fuente a Arial o sans-serif como alternativa */
-    background-image: url('https://st3.depositphotos.com/5689602/17614/v/600/depositphotos_176145514-stock-illustration-a-yellow-taxi-car-passing.jpg'); /* Establece una imagen de fondo */
-    background-size: cover; /* Hace que la imagen de fondo cubra toda el área disponible */
-    background-position: center; /* Centra la imagen de fondo */
-    background-attachment: fixed; /* Mantiene la imagen de fondo fija mientras se desplaza el contenido */
-    color: #000; /* Establece el color del texto a negro */
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background-image: url('https://st3.depositphotos.com/5689602/17614/v/600/depositphotos_176145514-stock-illustration-a-yellow-taxi-car-passing.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen se mantiene fija al desplazarse */
+    color: #000; /* Color del texto */
 }
 
+/* Estilos del encabezado */
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo negro semi-transparente */
-    padding: 10px 20px; /* Espaciado interno en la parte superior e inferior de 10px y en los lados de 20px */
-    display: flex; /* Usamos flexbox para distribuir los elementos */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Disposición en fila */
+    justify-content: space-between; /* Distribución uniforme de los elementos */
+    align-items: center; /* Alineación vertical */
 }
 
 .logo {
-    color: white; /* Establece el color del texto en blanco */
-    font-size: 1.5em; /* Establece el tamaño de fuente a 1.5 veces el tamaño estándar */
-    font-weight: bold; /* Establece el texto en negrita */
+    color: white; /* Texto blanco */
+    font-size: 1.5em; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
 }
 
 nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Muestra los elementos de la lista en línea usando flexbox */
-    gap: 15px; /* Añade un espacio de 15px entre los elementos de la lista */
-}
-
-nav ul li {
-    display: inline; /* Asegura que los elementos de la lista se muestren en línea */
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Disposición en fila */
+    gap: 15px; /* Espaciado entre elementos */
 }
 
 nav ul li a {
-    color: white; /* Establece el color del texto de los enlaces en blanco */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 1em; /* Establece el tamaño de la fuente a tamaño estándar */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1em; /* Tamaño de fuente */
 }
 
+/* Estilos del contenedor principal */
 .main-container {
-    display: flex; /* Utiliza flexbox para la distribución de los elementos */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    padding: 50px 10%; /* Añade 50px de espaciado arriba y abajo, y 10% de espaciado a los lados */
-    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    display: flex; /* Disposición en fila */
+    justify-content: space-between; /* Espaciado uniforme */
+    padding: 50px 10%; /* Espaciado interno */
+    align-items: flex-start; /* Alineación al inicio */
 }
 
 .left-section {
-    flex: 1; /* Hace que esta sección ocupe el 50% del ancho disponible */
-    margin-right: 50px; /* Añade un margen de 50px a la derecha */
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin-right: 50px; /* Espaciado derecho */
 }
 
 h1, p {
-    background-color: rgba(0, 0, 0, 0.7); /* Establece un fondo negro semitransparente */
-    padding: 10px; /* Añade espaciado interno de 10px */
-    border-radius: 5px; /* Redondea las esquinas del fondo */
-    color: white; /* Establece el color del texto a blanco */
-    display: inline-block; /* Hace que el fondo se ajuste al tamaño del texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto blanco */
+    display: inline-block; /* Evita que el texto ocupe toda la línea */
 }
 
 .form-group {
-    margin-bottom: 15px; /* Añade un margen de 15px debajo de cada grupo de formulario */
+    margin-bottom: 15px; /* Espaciado inferior */
 }
 
-input[type="text"], button, select {
-    width: 100%; /* Establece el ancho al 100% del contenedor */
-    padding: 10px; /* Añade espaciado interno de 10px */
-    font-size: 1em; /* Establece el tamaño de la fuente al tamaño estándar */
-    border: 1px solid #ccc; /* Añade un borde gris claro */
-    border-radius: 5px; /* Redondea las esquinas del borde */
-    margin-bottom: 15px; /* Añade un margen de 15px debajo de los elementos */
+input[type="text"], input[type="date"], input[type="time"], button, select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espaciado inferior */
 }
 
 button {
-    background-color: #000; /* Establece el color de fondo del botón en negro */
-    color: #fff; /* Establece el color del texto del botón en blanco */
-    border: none; /* Elimina el borde del botón */
-    padding: 10px; /* Añade espaciado interno de 10px */
-    font-size: 1em; /* Establece el tamaño de la fuente al tamaño estándar */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-radius: 5px; /* Redondea las esquinas del botón */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 button:hover {
-    background-color: #333; /* Cambia el color de fondo del botón a gris oscuro cuando el mouse pasa sobre él */
+    background-color: #333; /* Fondo gris oscuro al pasar el mouse */
 }
 
+/* Estilos del contenedor del mapa */
 .map-container {
-    flex: 1; /* Hace que esta sección ocupe el 50% del ancho disponible */
-    border: 1px solid #ccc; /* Añade un borde gris claro alrededor del contenedor del mapa */
-    border-radius: 5px; /* Redondea las esquinas del borde del mapa */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    flex: 1; /* Ocupa el espacio restante */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que se desborde */
 }
 
 iframe {
-    width: 100%; /* Establece el ancho del iframe al 100% del contenedor */
-    height: 400px; /* Establece la altura del iframe en 400px */
-    border: none; /* Elimina el borde del iframe */
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Altura fija */
+    border: none; /* Sin borde */
 }
