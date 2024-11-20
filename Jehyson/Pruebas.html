@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Sesión | ServiTaxi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://definicion.de/wp-content/uploads/2014/02/registro-de-datos.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #000;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .main-container {
+            background-color: #ededed;
+            width: 700px;
+            min-height: 500;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 80px; /* Añadir margen superior para la barra */
+        }
+
+        .main-container h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        .divider {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+            margin: 0 10px;
+        }
+
+        .alt-login {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .alt-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .alt-btn img {
+            width: 20px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .footer-text {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ServiTaxi</div>
+        <nav>
+            <ul>
+                <li><a href="Viaja.html">Viaja</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="IniciaSesion.html">Inicia Sesión</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+        <div class="user-section">
+            <span>¡Ayuda!</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h2>¿Cuál es tu número de teléfono o tu correo electrónico?</h2>
+        <input type="text" class="input-box" placeholder="Ingresa tu teléfono o correo electrónico">
+        <button class="btn">Continuar</button>
+
+        <div class="divider">o</div>
+
+        <div class="alt-login">
+            <div class="alt-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="Google">
+                Continúa con Google
+            </div>
+            <div class="alt-btn">
+                <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook">
+                Continúa con Facebook
+            </div>
+            <div class="alt-btn">
+                <img src="https://static.vecteezy.com/system/resources/previews/003/237/403/non_2x/line-icon-for-registration-vector.jpg" alt="">
+                ¡Registrate!
+            </div>
+        </div>
+
+        <p class="footer-text">
+            Al continuar, aceptas recibir llamadas y mensajes de ServiTaxi.
+        </p>
+    </div>
+</body>
+</html>
