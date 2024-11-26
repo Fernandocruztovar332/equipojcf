@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaja | ServiTaxi</title>
-    <link rel="stylesheet" href="Viaja.css">
+    <title>Inicia Sesión | URBAN</title>
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('https://st3.depositphotos.com/5689602/17614/v/600/depositphotos_176145514-stock-illustration-a-yellow-taxi-car-passing.jpg');
+            background-image: url(/Jehyson/Imagenes/FondoIniciarSesion.avif);
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            background-repeat: no-repeat;
             color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #000;
+            padding: 10px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
+            color: #fff;
         }
 
         .logo {
-            color: white;
             font-size: 1.5em;
             font-weight: bold;
         }
@@ -36,76 +44,113 @@
             gap: 15px;
         }
 
+        nav ul li {
+            display: inline;
+        }
+
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             font-size: 1em;
         }
 
-        .main-container {
+        .user-section {
             display: flex;
-            justify-content: space-between;
-            padding: 50px 10%;
-            align-items: flex-start;
+            align-items: center;
+            gap: 10px;
         }
 
-        .left-section {
-            flex: 1;
-            margin-right: 50px;
+        .main-container {
+            background-color: #ededed;
+            width: 600px; /* Reduce el ancho */
+            min-height: 6%; /* Incrementa la altura mínima */
+            padding: 80px; /* Espaciado interno */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 80px;
         }
 
-        h1, p {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            color: white;
-            display: inline-block;
-        }
-
-        .form-group {
+        .main-container h2 {
+            font-size: 1.8em;
             margin-bottom: 15px;
+            color: #333;
         }
 
-        input[type="text"], input[type="date"], input[type="time"], button, select {
-            width: 100%;
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ccc;
+        .input-box {
+            width: 90%;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 5px;
-            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            font-size: 1.2em;
         }
 
-        button {
+        .btn {
+            width: 90%;
+            padding: 15px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
             background-color: #000;
             color: #fff;
-            border: none;
-            padding: 10px;
-            font-size: 1em;
+            font-size: 1.2em;
             cursor: pointer;
-            border-radius: 5px;
         }
 
-        button:hover {
+        .btn:hover {
             background-color: #333;
         }
 
-        .map-container {
-            flex: 1;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            overflow: hidden;
+        .divider {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+            margin: 0 10px;
+        }
+
+        .alt-login {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .alt-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .alt-btn img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .footer-text {
+            font-size: 1em;
+            color: #888;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">ServiTaxi</div>
+        <div class="logo">URBAN</div>
         <nav>
             <ul>
                 <li><a href="Viaja.html">Viaja</a></li>
@@ -120,33 +165,27 @@
         </div>
     </header>
     <div class="main-container">
-        <div class="left-section">
-            <h1>Viaja A Cualquier Lugar Con ServiTaxi</h1>
-            <p>Planifica Tu Viaje Con Facilidad.</p>
-            <div class="form-group">
-                <input type="text" placeholder="Punto De Partida">
+        <h2>¿Cuál es tu número de teléfono o tu correo electrónico?</h2>
+        <input type="text" class="input-box" placeholder="Ingresa tu teléfono o correo electrónico">
+        <button class="btn">Continuar</button>
+        <div class="divider">o</div>
+        <div class="alt-login">
+            <div class="alt-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="Google">
+                Continúa con Google
             </div>
-            <div class="form-group">
-                <input type="text" placeholder="Destino">
+            <div class="alt-btn">
+                <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook">
+                Continúa con Facebook
             </div>
-            <div class="form-group">
-                <input type="date"> <!-- Campo para seleccionar la fecha -->
+            <div class="alt-btn">
+                <img src="https://static.vecteezy.com/system/resources/previews/003/237/403/non_2x/line-icon-for-registration-vector.jpg" alt="">
+                ¡Registrate!
             </div>
-            <div class="form-group">
-                <input type="time"> <!-- Campo para seleccionar la hora -->
-            </div>
-            <button>Ver Precios</button>
         </div>
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.5088508438817!2d-100.64504808498326!3d23.64967538463947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86884555e842b5d1%3A0x1a61a4edc5bafc5a!2sMatehuala%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700406201003!5m2!1ses!2smx" 
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-        </div>
+        <p class="footer-text">
+            Al continuar, aceptas recibir llamadas y mensajes de URBAN.
+        </p>
     </div>
 </body>
 </html>

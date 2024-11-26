@@ -2,7 +2,7 @@
 body {
     margin: 0; /* Elimina márgenes predeterminados */
     font-family: Arial, sans-serif; /* Fuente predeterminada */
-    background-image: url('https://st3.depositphotos.com/5689602/17614/v/600/depositphotos_176145514-stock-illustration-a-yellow-taxi-car-passing.jpg'); /* Imagen de fondo */
+    background-image: url(/Jehyson/Imagenes/FondoViaja.jpg); /* Imagen de fondo */
     background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* La imagen se mantiene fija al desplazarse */
@@ -20,7 +20,7 @@ header {
 
 .logo {
     color: white; /* Texto blanco */
-    font-size: 1.5em; /* Tamaño de fuente */
+    font-size: 1.8em; /* Tamaño de fuente */
     font-weight: bold; /* Texto en negrita */
 }
 
@@ -33,14 +33,14 @@ nav ul {
 nav ul li a {
     color: white; /* Texto blanco */
     text-decoration: none; /* Sin subrayado */
-    font-size: 1em; /* Tamaño de fuente */
+    font-size: 1.2em; /* Tamaño de fuente */
 }
 
 /* Estilos del contenedor principal */
 .main-container {
     display: flex; /* Disposición en fila */
     justify-content: space-between; /* Espaciado uniforme */
-    padding: 50px 10%; /* Espaciado interno */
+    padding: 200px 15%; /* Espaciado interno */
     align-items: flex-start; /* Alineación al inicio */
 }
 
@@ -50,9 +50,9 @@ nav ul li a {
 }
 
 h1, p {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.89); /* Fondo semitransparente */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
     color: white; /* Texto blanco */
     display: inline-block; /* Evita que el texto ocupe toda la línea */
 }
@@ -63,10 +63,10 @@ h1, p {
 
 input[type="text"], input[type="date"], input[type="time"], button, select {
     width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Espaciado interno */
+    padding: 15px; /* Espaciado interno */
     font-size: 1em; /* Tamaño de fuente */
     border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 10px; /* Bordes redondeados */
     margin-bottom: 15px; /* Espaciado inferior */
 }
 
