@@ -1,156 +1,150 @@
-/* Estilo global para el cuerpo de la página */
+/* Estilo global para la página */
 body {
-    margin: 0; /* Elimina el margen predeterminado de la página */
-    padding: 0; /* Elimina el padding predeterminado de la página */
-    font-family: Arial, sans-serif; /* Aplica la fuente Arial con sans-serif como respaldo */
-    background-image: url('https://definicion.de/wp-content/uploads/2014/02/registro-de-datos.png'); /* Establece una imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para que cubra toda el área visible */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    color: #000; /* Establece el color de texto predeterminado como negro */
-    display: flex; /* Usa flexbox para el diseño */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: Arial, sans-serif; /* Define la fuente predeterminada */
+    background-image: url(/Jehyson/Imagenes/FondoIniciarSesion.avif); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #000; /* Color de texto negro */
+    display: flex; /* Diseño flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura de la ventana completa */
 }
 
-/* Estilo del encabezado */
+/* Encabezado */
 header {
-    position: absolute; /* Posiciona el encabezado en la parte superior de la página */
-    top: 0; /* Fija el encabezado al borde superior */
-    width: 100%; /* Ocupa el ancho completo de la página */
+    position: absolute; /* Fija el encabezado */
+    top: 0; /* Posición superior */
+    width: 100%; /* Ocupa todo el ancho */
     background-color: #000; /* Fondo negro */
-    padding: 10px 0; /* Padding superior e inferior de 10px */
-    display: flex; /* Diseño flexbox para alinear elementos */
-    justify-content: space-between; /* Espacia los elementos del encabezado */
-    align-items: center; /* Alinea los elementos verticalmente */
-    padding: 0 20px; /* Padding lateral de 20px */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    display: flex; /* Diseño flexbox */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Alineación vertical */
+    padding: 0 20px; /* Espaciado lateral */
     color: #fff; /* Color de texto blanco */
 }
 
-/* Estilo del logo */
+/* Logo del encabezado */
 .logo {
-    font-size: 1.5em; /* Tamaño del texto más grande */
+    font-size: 1.5em; /* Tamaño del texto */
     font-weight: bold; /* Texto en negrita */
 }
 
-/* Estilo para las listas de navegación */
+/* Estilo para la navegación */
 nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Alinea los elementos en una fila */
-    gap: 15px; /* Espaciado entre los elementos */
-}
-
-nav ul li {
-    display: inline; /* Muestra los elementos en línea */
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Alinea elementos en línea */
+    gap: 15px; /* Espaciado entre enlaces */
 }
 
 nav ul li a {
-    color: #fff; /* Color de texto blanco */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 1em; /* Tamaño del texto */
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
 }
 
-/* Estilo de la sección de usuario */
+/* Sección del usuario */
 .user-section {
     display: flex; /* Diseño flexbox */
-    align-items: center; /* Alinea los elementos verticalmente */
+    align-items: center; /* Alineación vertical */
     gap: 10px; /* Espaciado entre elementos */
 }
 
 /* Contenedor principal */
 .main-container {
     background-color: #ededed; /* Fondo gris claro */
-    width: 700px; /* Ancho fijo */
-    min-height: 500px; /* Altura mínima */
-    padding: 30px; /* Espaciado interno */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    text-align: center; /* Centra el texto */
-    margin-top: 80px; /* Espaciado superior para el encabezado */
+    width: 600px; /* Ancho del contenedor */
+    min-height: 600px; /* Altura mínima */
+    padding: 80px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centra el contenido */
+    margin-top: 80px; /* Espaciado superior */
 }
 
-/* Estilo del título principal */
+/* Título principal */
 .main-container h2 {
-    font-size: 1.5em; /* Tamaño del texto */
-    margin-bottom: 10px; /* Espaciado inferior */
-    color: #333; /* Color de texto gris oscuro */
+    font-size: 1.8em; /* Tamaño del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+    color: #333; /* Color gris oscuro */
 }
 
-/* Estilo de los cuadros de entrada */
+/* Campo de entrada */
 .input-box {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Espaciado interno */
-    margin: 15px 0; /* Espaciado superior e inferior */
-    border-radius: 5px; /* Esquinas redondeadas */
+    width: 90%; /* Ocupa el 90% del ancho */
+    padding: 15px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    border-radius: 5px; /* Bordes redondeados */
     border: 1px solid #ddd; /* Borde gris claro */
+    font-size: 1.2em; /* Tamaño del texto */
 }
 
-/* Estilo de los botones */
+/* Botón principal */
 .btn {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Espaciado interno */
-    margin-top: 10px; /* Espaciado superior */
+    width: 90%; /* Ocupa el 90% del ancho */
+    padding: 15px; /* Espaciado interno */
+    margin-top: 15px; /* Espaciado superior */
     border: none; /* Sin bordes */
-    border-radius: 5px; /* Esquinas redondeadas */
+    border-radius: 5px; /* Bordes redondeados */
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
-    font-size: 1em; /* Tamaño del texto */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 1.2em; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar */
 }
 
-/* Efecto hover para los botones */
 .btn:hover {
-    background-color: #333; /* Fondo gris oscuro */
+    background-color: #333; /* Fondo gris oscuro al pasar el cursor */
 }
 
-/* Estilo del divisor */
+/* Línea divisoria */
 .divider {
-    margin: 15px 0; /* Espaciado superior e inferior */
-    display: flex; /* Diseño flexbox */
-    align-items: center; /* Centra los elementos verticalmente */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    display: flex; /* Flexbox para centrar elementos */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
 }
 
 /* Líneas del divisor */
 .divider::before,
 .divider::after {
     content: ''; /* Agrega contenido vacío */
-    flex: 1; /* Ocupa el espacio restante */
+    flex: 1; /* Ocupa el espacio disponible */
     height: 1px; /* Altura de la línea */
     background-color: #ddd; /* Color gris claro */
     margin: 0 10px; /* Espaciado lateral */
 }
 
-/* Estilo para opciones de inicio de sesión alternativas */
+/* Opciones de inicio de sesión alternativas */
 .alt-login {
     display: flex; /* Diseño flexbox */
-    flex-direction: column; /* Apila los elementos en columna */
-    gap: 10px; /* Espaciado entre elementos */
+    flex-direction: column; /* Elementos en columna */
+    gap: 15px; /* Espaciado entre opciones */
 }
 
-/* Botones alternativos */
 .alt-btn {
     display: flex; /* Diseño flexbox */
-    align-items: center; /* Alinea los elementos verticalmente */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    padding: 10px; /* Espaciado interno */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
+    padding: 15px; /* Espaciado interno */
     border: 1px solid #ddd; /* Borde gris claro */
-    border-radius: 5px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    font-size: 1em; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    font-size: 1.2em; /* Tamaño del texto */
 }
 
-/* Estilo de las imágenes en los botones alternativos */
+/* Iconos de las opciones alternativas */
 .alt-btn img {
-    width: 20px; /* Ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 10px; /* Espaciado derecho */
+    width: 30px; /* Tamaño del icono */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 10px; /* Espaciado entre icono y texto */
 }
 
-/* Texto en el pie de página */
+/* Texto del pie de página */
 .footer-text {
-    font-size: 0.8em; /* Tamaño del texto más pequeño */
-    color: #888; /* Color de texto gris claro */
-    margin-top: 15px; /* Espaciado superior */
+    font-size: 1em; /* Tamaño del texto */
+    color: #888; /* Color gris claro */
+    margin-top: 20px; /* Espaciado superior */
 }

@@ -2,7 +2,7 @@
 body {
     margin: 0; /* Elimina márgenes predeterminados */
     font-family: Arial, sans-serif; /* Fuente predeterminada */
-    background-image: url('https://st3.depositphotos.com/5689602/17614/v/600/depositphotos_176145514-stock-illustration-a-yellow-taxi-car-passing.jpg'); /* Imagen de fondo */
+    background-image: url(/Jehyson/Imagenes/FondoViaja.jpg); /* Imagen de fondo */
     background-size: cover; /* Escala la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* La imagen se mantiene fija al desplazarse */

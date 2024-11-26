@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos básicos para la página -->
-    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalabilidad en dispositivos móviles -->
-    <title>Viaja | ServiTaxi</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="Viaja.css"> <!-- Enlace al archivo CSS externo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja | URBAN</title>
+    <link rel="stylesheet" href="Viaja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Encabezado de la página -->
     <header>
-        <!-- Logo principal de la página -->
-        <div class="logo">ServiTaxi</div> 
-        <!-- Menú de navegación -->
+        <div class="logo">URBAN</div>
         <nav>
             <ul>
-                <li><a href="Viaja.html">Viaja</a></li> <!-- Enlace a la página actual -->
-                <li><a href="#">-</a></li> <!-- Separador -->
-                <li><a href="IniciarSesion.html">Iniciar Sesión</a></li> <!-- Enlace a iniciar sesión -->
-                <li><a href="#">-</a></li> <!-- Separador -->
-                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li> <!-- Enlace a información sobre la empresa -->
+                <li><a href="Viaja.html">Viaja</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="IniciarSesion.html">Iniciar Sesión</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li>
             </ul>
         </nav>
         <div class="user-section">
-            <span>¡Ayuda!</span> <!-- Ayuda al usuario -->
+            <a href="#" class="help-btn"><i class="fas fa-question-circle"></i> Ayuda</a>
         </div>
     </header>
 
-    <!-- Contenedor principal -->
     <div class="main-container">
-        <!-- Sección izquierda para el formulario -->
         <div class="left-section">
-            <h1>Viaja A Cualquier Lugar Con ServiTaxi</h1> <!-- Título principal -->
-            <p>Planifica Tu Viaje Con Facilidad.</p> <!-- Descripción -->
-            <div class="form-group">
-                <input type="text" placeholder="Punto De Partida"> <!-- Campo de entrada para el punto de partida -->
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Destino"> <!-- Campo de entrada para el destino -->
-            </div>
-            <div class="form-group">
-                <input type="date"> <!-- Campo para seleccionar la fecha -->
-            </div>
-            <div class="form-group">
-                <input type="time"> <!-- Campo para seleccionar la hora -->
-            </div>
-            <button>Ver Precios</button> <!-- Botón para calcular precios -->
+            <h1>Viaja A Cualquier Lugar Con URBAN</h1>
+            <p>Planifica tu viaje de forma rápida y segura.</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="📍 Punto de Partida" aria-label="Punto de Partida">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="📍 Destino" aria-label="Destino">
+                </div>
+                <div class="form-group">
+                    <input type="date" aria-label="Fecha del Viaje">
+                </div>
+                <div class="form-group">
+                    <input type="time" aria-label="Hora del Viaje">
+                </div>
+                <button type="submit">Calcular Precios</button>
+            </form>
         </div>
 
-        <!-- Sección derecha para el mapa -->
         <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.5088508438817!2d-100.64504808498326!3d23.64967538463947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86884555e842b5d1%3A0x1a61a4edc5bafc5a!2sMatehuala%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700406201003!5m2!1ses!2smx" 
-                width="600"
-                height="450"
-                style="border:0;"
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.5088508438817!2d-100.64504808498326!3d23.64967538463947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86884555e842b5d1%3A0x1a61a4edc5bafc5a!2sMatehuala%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700406201003!5m2!1ses!2smx"
                 allowfullscreen=""
                 loading="lazy">
-            </iframe> <!-- Muestra un mapa incrustado -->
+            </iframe>
         </div>
     </div>
 </body>
