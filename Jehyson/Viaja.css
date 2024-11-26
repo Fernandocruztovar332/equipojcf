@@ -40,7 +40,7 @@ nav ul li a {
 .main-container {
     display: flex; /* Disposición en fila */
     justify-content: space-between; /* Espaciado uniforme */
-    padding: 300px 15%; /* Espaciado interno */
+    padding: 200px 15%; /* Espaciado interno */
     align-items: flex-start; /* Alineación al inicio */
 }
 
