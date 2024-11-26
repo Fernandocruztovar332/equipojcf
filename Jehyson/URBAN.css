@@ -2,7 +2,7 @@ body {
     margin: 0; /* Elimina los márgenes predeterminados del navegador */
     padding: 0; /* Elimina el padding predeterminado del navegador */
     font-family: Arial, sans-serif; /* Establece la fuente predeterminada como Arial, o sans-serif como alternativa */
-    background-image: url(/Jehyson/Imagenes/FondoURBAN.jpg); /* Establece una imagen de fondo */
+    background-image: url(/Jehyson/Imagenes/FondoURBAN.jpg!d); /* Establece una imagen de fondo */
     background-size: cover; /* Hace que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
@@ -30,20 +30,20 @@ body {
 }
 
 h1 {
-    font-size: 3em; /* Establece el tamaño de la fuente del título a 3 veces el tamaño estándar */
+    font-size: 4em; /* Establece el tamaño de la fuente del título a 3 veces el tamaño estándar */
     margin-bottom: 10px; /* Agrega un margen inferior de 10px */
     color: #000000; /* Establece el color del texto del título a negro */
 }
 
 p {
-    font-size: 1.2em; /* Establece el tamaño de la fuente del párrafo a 1.2 veces el tamaño estándar */
+    font-size: 1.7em; /* Establece el tamaño de la fuente del párrafo a 1.2 veces el tamaño estándar */
     margin-bottom: 20px; /* Agrega un margen inferior de 20px */
     color: #000000; /* Establece el color del texto del párrafo a negro */
 }
 
 input[type="text"], input[type="button"] {
     padding: 10px; /* Agrega padding de 10px a los campos de texto y botones */
-    font-size: 1em; /* Establece el tamaño de la fuente a un tamaño estándar */
+    font-size: 1.5em; /* Establece el tamaño de la fuente a un tamaño estándar */
     margin: 10px; /* Agrega un margen de 10px alrededor de los elementos */
     border-radius: 5px; /* Bordes redondeados con un radio de 5px */
     border: none; /* Elimina el borde predeterminado de los elementos */
