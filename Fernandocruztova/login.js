@@ -1,31 +1,33 @@
-document.querySelector('input[value="Registrate"]').addEventListener('click', async () => {
-    const nombre = document.querySelector('input[placeholder="Ingresa Tu Nombre(s)"]').value;
-    const apellidos = document.querySelector('input[placeholder="Ingresa Tus Apellidos"]').value;
-    const telefono = document.querySelector('input[placeholder="Ingresa Tu Telefono "]').value;
-    const contraseña = document.querySelector('input[placeholder="Ingresa Una Contraseña"]').value;
 
-    if (!nombre || !apellidos || !telefono || !contraseña) {
-        alert('Todos los campos son obligatorios.');
+//registrarUsuario.js
+async function registrarUsuario() {
+    const form = document.getElementById('registerForm');
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert('Las contraseñas no coinciden');
         return;
     }
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
     try {
         const response = await fetch('http://localhost:3000/registrar', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ nombre, apellidos, telefono, contraseña }),
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
         });
 
-        const data = await response.json();
-        if (data.error) {
-            alert('Error: ' + data.error);
+        if (response.ok) {
+            alert('Usuario registrado correctamente');
         } else {
-            alert(data.message);
+            const error = await response.text();
+            alert(`Error: ${error}`);
         }
-    } catch (error) {
-        console.error('Error en la solicitud:', error);
-        alert('No se pudo registrar el usuario.');
+    } catch (err) {
+        console.error(err);
+        alert('Hubo un error al conectar con el servidor.');
     }
-});
+}
