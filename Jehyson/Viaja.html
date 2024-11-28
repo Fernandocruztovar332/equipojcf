@@ -1,86 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos básicos del documento -->
-    <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalabilidad en dispositivos móviles -->
-    <title>Viaja | URBAN</title> <!-- Título de la página -->
-    
-    <!-- Enlace al archivo de estilos personalizados -->
+    <!-- Especifica el conjunto de caracteres para el documento -->
+    <meta charset="UTF-8">
+    <!-- Configura el viewport para que el diseño sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Viaja | URBAN</title>
+    <!-- Enlace al archivo CSS externo para estilos -->
     <link rel="stylesheet" href="Viaja.css">
-
-    <!-- Enlace a la librería de iconos FontAwesome para agregar iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a la librería Leaflet para mapas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Enlace a Leaflet Routing Machine para rutas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 </head>
 <body>
-    <!-- Encabezado de la página -->
+    <!-- Cabecera de la página -->
     <header>
-        <!-- Logotipo del sitio -->
         <div class="logo">URBAN</div>
-
-        <!-- Menú de navegación -->
         <nav>
             <ul>
-                <li><a href="Viaja.html">Viaja</a></li> <!-- Enlace al apartado "Viaja" -->
-                <li><a href="#">-</a></li> <!-- Separador visual entre enlaces -->
-                <li><a href="IniciarSesion.html">Iniciar Sesión</a></li> <!-- Enlace al apartado de inicio de sesión -->
-                <li><a href="#">-</a></li> <!-- Separador visual entre enlaces -->
-                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li> <!-- Enlace al apartado de información sobre la empresa -->
+                <li><a href="Viaja.html">Viaja</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="IniciarSesion.html">Iniciar Sesión</a></li>
+                <li><a href="#">-</a></li>
+                <li><a href="QuienesSomos.html">¿Quiénes Somos?</a></li>
             </ul>
         </nav>
-
-        <!-- Sección de ayuda para el usuario -->
         <div class="user-section">
             <a href="#" class="help-btn">
-                <!-- Icono de ayuda y texto -->
                 <i class="fas fa-question-circle"></i> Ayuda
             </a>
         </div>
     </header>
-
-    <!-- Contenedor principal que engloba el formulario y el mapa -->
+    <!-- Contenedor principal que contiene el formulario y el mapa -->
     <div class="main-container">
-        <!-- Sección izquierda con el formulario -->
         <div class="left-section">
-            <h1>Viaja A Cualquier Lugar Con URBAN</h1> <!-- Título principal -->
-            <p>Planifica tu viaje de forma rápida y segura.</p> <!-- Subtítulo con descripción -->
-
-            <!-- Formulario de entrada de datos -->
+            <!-- Encabezado y descripción -->
+            <h1>Viaja A Cualquier Lugar Con URBAN</h1>
+            <p>Planifica tu viaje de forma rápida y segura.</p>
+            <!-- Formulario para seleccionar puntos de partida, destino y fecha/hora -->
             <form>
-                <!-- Campo de entrada para el punto de partida -->
                 <div class="form-group">
-                    <input type="text" placeholder="📍 Punto de Partida" aria-label="Punto de Partida"> 
+                    <!-- Campo para el punto de partida -->
+                    <input type="text" placeholder="📍 Punto de Partida" aria-label="Punto de Partida">
                 </div>
-
-                <!-- Campo de entrada para el destino -->
                 <div class="form-group">
+                    <!-- Campo para el destino -->
                     <input type="text" placeholder="📍 Destino" aria-label="Destino">
                 </div>
-
-                <!-- Campo de selección de fecha -->
                 <div class="form-group">
+                    <!-- Campo para la fecha del viaje -->
                     <input type="date" aria-label="Fecha del Viaje">
                 </div>
-
-                <!-- Campo de selección de hora -->
                 <div class="form-group">
+                    <!-- Campo para la hora del viaje -->
                     <input type="time" aria-label="Hora del Viaje">
                 </div>
-
                 <!-- Botón para calcular precios -->
                 <button type="submit">Calcular Precios</button>
             </form>
         </div>
-
-        <!-- Sección derecha con el mapa -->
+        <!-- Contenedor para el mapa interactivo -->
         <div class="map-container">
-            <!-- Mapa incrustado de Google Maps -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.5088508438817!2d-100.64504808498326!3d23.64967538463947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86884555e842b5d1%3A0x1a61a4edc5bafc5a!2sMatehuala%2C%20San%20Luis%20Potos%C3%AD%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700406201003!5m2!1ses!2smx"
-                allowfullscreen="" <!-- Habilita la vista en pantalla completa -->
-                loading="lazy"> <!-- Optimización para carga diferida -->
-            </iframe>
+            <div id="map"></div>
         </div>
     </div>
+    <script>
+        // Inicializa el mapa y establece la vista inicial
+        var map = L.map('map').setView([23.649675, -100.645048], 13);
+
+        // Agrega el mapa base desde OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19, // Zoom máximo permitido
+            attribution: '© OpenStreetMap contributors' // Atribución requerida
+        }).addTo(map);
+
+        // Variables para almacenar los marcadores y el control de rutas
+        var startMarker = null;
+        var endMarker = null;
+        var routingControl = null;
+
+        // Función para obtener la dirección legible a partir de coordenadas
+        function getAddress(lat, lng, inputSelector) {
+            const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`;
+
+            fetch(url) // Realiza una solicitud a la API
+                .then(response => response.json()) // Convierte la respuesta a JSON
+                .then(data => {
+                    if (data && data.display_name) {
+                        // Si hay una dirección, la muestra en el campo correspondiente
+                        document.querySelector(inputSelector).value = data.display_name;
+                    } else {
+                        // Si no hay datos, muestra un mensaje de error
+                        document.querySelector(inputSelector).value = "Dirección no encontrada";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error al obtener la dirección:", error);
+                    // Maneja errores de la API
+                    document.querySelector(inputSelector).value = "Error al obtener la dirección";
+                });
+        }
+
+        // Función que maneja los clics en el mapa
+        function onMapClick(e) {
+            if (!startMarker) {
+                // Si no hay marcador de partida, lo agrega
+                startMarker = L.marker(e.latlng).addTo(map)
+                    .bindPopup('Punto de Partida') // Mensaje emergente
+                    .openPopup();
+                // Obtiene la dirección del punto de partida
+                getAddress(e.latlng.lat, e.latlng.lng, 'input[placeholder="📍 Punto de Partida"]');
+            } else if (!endMarker) {
+                // Si no hay marcador de destino, lo agrega
+                endMarker = L.marker(e.latlng).addTo(map)
+                    .bindPopup('Destino') // Mensaje emergente
+                    .openPopup();
+                // Obtiene la dirección del destino
+                getAddress(e.latlng.lat, e.latlng.lng, 'input[placeholder="📍 Destino"]');
+
+                if (routingControl) {
+                    // Elimina una ruta anterior si existe
+                    map.removeControl(routingControl);
+                }
+                // Agrega el control de rutas entre los dos puntos
+                routingControl = L.Routing.control({
+                    waypoints: [startMarker.getLatLng(), endMarker.getLatLng()], // Coordenadas
+                    routeWhileDragging: true, // Permite arrastrar la ruta para modificarla
+                    show: false, // Oculta el menú adicional de rutas
+                    language: 'es' // Configura el idioma
+                }).addTo(map);
+            } else {
+                // Si ya existen dos marcadores, los reinicia
+                map.removeLayer(startMarker);
+                map.removeLayer(endMarker);
+                if (routingControl) {
+                    map.removeControl(routingControl);
+                }
+                startMarker = L.marker(e.latlng).addTo(map)
+                    .bindPopup('Punto de Partida')
+                    .openPopup();
+                // Reinicia la dirección del punto de partida
+                getAddress(e.latlng.lat, e.latlng.lng, 'input[placeholder="📍 Punto de Partida"]');
+                endMarker = null; // Reinicia el marcador de destino
+            }
+        }
+
+        // Vincula el evento de clic al mapa
+        map.on('click', onMapClick);
+    </script>
 </body>
 </html>
