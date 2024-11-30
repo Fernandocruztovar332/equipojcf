@@ -1,5 +1,5 @@
 
-//registrarUsuario.js
+//login.js
 async function registrarUsuario() {
     const form = document.getElementById('registerForm');
     const password = document.getElementById('password').value;
